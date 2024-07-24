@@ -1,0 +1,35 @@
+to connect mariya db
+
+[root@host]# mysql -u root -p
+
+Enter password:******
+
+---------------------------------
+
+Create a new user account with the following code −
+
+CREATE USER 'newusername'@'localhost' IDENTIFIED BY 'userpassword';
+
+----------------------
+
+Grant the user privileges with the following code −
+
+GRANT SELECT, INSERT, UPDATE, DELETE ON database1 TO 'newusername'@'localhost';
+
+-------------------------
+
+1.USE [database name] − Sets the current default database.
+
+2.SHOW DATABASES − Lists the databases currently on the server.
+
+3.SHOW TABLES − Lists all non-temporary tables.
+
+4.SHOW COLUMNS FROM [table name] − Provides column information pertaining to the specified table.
+
+5.SHOW INDEX FROM TABLENAME [table name] − Provides table index information relating to the specified table.
+
+6.SHOW TABLE STATUS LIKE [table name]\G – − Provides tables with information about non-temporary tables, and the pattern that appears after the LIKE clause is used to fetch table names.
+
+
+-----------------------------------------------------
+
